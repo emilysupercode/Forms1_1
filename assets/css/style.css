@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url("../fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+/* body styles */
+
+body {
+    display: block;
+    width: 30vw;
+    margin: 20vh auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30vw;
+    height: 40vh;
+}
+
+/* input styles */
+
+label {
+    font-family: 'Roboto-Bold', sans-serif;
+    padding: 0.5vh;
+    display: block;
+}
+
+article.name {
+    display: flex;
+}
+
+input[type="email"] {
+    width: 100%
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 0.5vh 0.5vw;
+    border-radius: 4px;
+    border: 2px solid lightgray;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: 2px solid #4895A2;
+    border: none;
+    padding: 0.5vh 0.5vw;
+}
+
+select {
+    display: flex;
+    padding: 1vh 1vw;
+    border: 2px solid lightgray;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+span {
+    color: red;
+}
+
+button {
+    background-color: #4895A2;
+    color: white;
+    border: none;
+    padding: 1vh 1vw;
+}
+
+button:hover {
+    background-color: black;
+}
